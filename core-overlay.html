@@ -441,7 +441,7 @@ Fired when the `core-overlay` has completely closed.
     },
 
     getFocusNode: function() {
-      return this.target.querySelector('[autofocus]') || this.target;
+      return this.target.querySelector(':host /deep/ [autofocus]') || this.target;
     },
 
     applyFocus: function() {
